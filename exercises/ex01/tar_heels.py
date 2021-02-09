@@ -2,7 +2,6 @@
 
 __author__ = "730342554"
 
-
 # Begin your solution here...
 rand_number: int = int(input("Enter a number: "))
 

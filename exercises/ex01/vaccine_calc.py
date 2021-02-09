@@ -27,8 +27,8 @@ dose_per_day: int = int(input("doses per day: "))
 target_goal: int = int(input("target percent vaccinated:: "))
 
 vacc_current_date: int = int(doses_admin / 2)
-pop_percent_deci: int = float(target_goal / 100)
-vacc_needed: int = float(current_pop * pop_percent_deci)
+pop_percent_deci: float = float(target_goal / 100)
+vacc_needed: float = float(current_pop * pop_percent_deci)
 remainder_vacc: int = int(vacc_needed-vacc_current_date)
 days_goal_reached: int = int((2*remainder_vacc)/dose_per_day )
 
