@@ -20,7 +20,7 @@ random_fortunes: int = randint(0, 100)
 
 if random_fortunes < 50:
     if random_fortunes < 25: 
-        print("Great things are coming, you just have to be patient.")
+        print("Great things are coming, you just have to be patient and wait.")
     else:
         print("Like a river flows into the sea... some things are just meant to be.")
 else:
@@ -30,6 +30,6 @@ else:
         if random_fortunes < 75:
             print("Happiness begins with facing life with a smile and a wink.")
         else:
-            print("Keep your face to the sunshine and you wll never see shadows.")
+            print("Keep your face to the sunshine and Syou wll never see shadows.")
 
 print("Now, go spread positive vibes!")

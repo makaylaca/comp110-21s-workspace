@@ -24,7 +24,7 @@ today: datetime = datetime.today()
 current_pop: int = int(input("Population: "))
 doses_admin: int = int(input("doses administered: "))
 dose_per_day: int = int(input("doses per day: "))
-target_goal: int = int(input("target percent vaccinated: "))
+target_goal: int = int(input("target percent vaccinated:: "))
 
 vacc_current_date: int = int(doses_admin / 2)
 pop_percent_deci: int = float(target_goal / 100)
