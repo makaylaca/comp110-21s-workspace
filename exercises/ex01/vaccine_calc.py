@@ -21,23 +21,23 @@ from datetime import timedelta
 
 today: datetime = datetime.today()
 
-current_pop: int = int(input("Population: "))
-doses_admin: int = int(input("doses administered: "))
-dose_per_day: int = int(input("doses per day: "))
-target_goal: int = int(input("target percent vaccinated:: "))
+CURRENT_POP: int = int(input("Population: "))
+DOSES_ADMIN: int = int(input("doses administered: "))
+DOSE_PER_DAY: int = int(input("doses per day: "))
+TARGET_GOAL: int = int(input("target percent vaccinated:: "))
 
-vacc_current_date: int = int(doses_admin / 2)
-pop_percent_deci: float = float(target_goal / 100)
-vacc_needed: float = float(current_pop * pop_percent_deci)
-remainder_vacc: int = int(vacc_needed-vacc_current_date)
-days_goal_reached: int = int((2*remainder_vacc)/dose_per_day )
+VACC_CURRENT_DATE: int = int(DOSES_ADMIN / 2)
+POP_PERCENT_DECI: float = float(TARGET_GOAL / 100)
+VACC_NEEDED: float = float(CURRENT_POP * POP_PERCENT_DECI)
+REMAINDER_VACC: int = int(VACC_NEEDED-VACC_CURRENT_DATE)
+DAYS_GOAL_REACHED: int = int((2*REMAINDER_VACC)/DOSE_PER_DAY )
 
-future: timedelta = timedelta(days_goal_reached)
-day_goal_met: datetime = today + future
-date: datetime = day_goal_met.strftime("%B %d, %Y")
+FUTURE: timedelta = timedelta(DAYS_GOAL_REACHED)
+DAY_GOAL_MET: datetime = today + FUTURE
+DATE: datetime = DAY_GOAL_MET.strftime("%B %d, %Y")
 
-t_goal: str = str(target_goal)
-day: str = str(days_goal_reached)
-date_s: str = str(date)
+T_GOAL: str = str(TARGET_GOAL)
+DAY: str = str(DAYS_GOAL_REACHED)
+DATE_S: str = str(DATE)
 
-print("We will reach " + t_goal + "% vaccination in " + day + " days, which falls on " + date_s + ".")
+print("We will reach " + T_GOAL + "% vaccination in " + DAY + " days, which falls on " + DATE_S + ".")
