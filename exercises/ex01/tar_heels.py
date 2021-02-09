@@ -14,4 +14,4 @@ else:
         if rand_number % 7 == 0:
             print("HEELS")
         else:
-                print("CAROLINA")
+            print("CAROLINA")
